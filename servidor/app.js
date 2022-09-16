@@ -8,7 +8,7 @@ app.use(morgan("tiny"));
 
 app.use(bodyParser.json());
 
-app.use("/registros", registros);
+app.use("/registro", registros);
 
 app.use((req, res, next) => {
   let err = new Error("no encontrado");
